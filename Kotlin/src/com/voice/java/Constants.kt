@@ -1,0 +1,20 @@
+package com.voice.java
+
+const val HTTP_METHOD = "POST"
+const val HTTPS = "https://"
+const val DEBUG_DOMAIN ="cloudbackup.hwcloudtest.cn"
+const val DEBUG_PORT = "6447"
+const val MAIN_GLOBAL_DOMAIN = "logservice.hicloud.com"
+const val MAIN_CHINA_DOMAIN = "logservice1.hicloud.com"
+const val BACKUP_CHINA_DOMAIN = "logservice1.dbankcloud.cn"
+const val MAIN_PORT = "443"
+const val GET_SERVER_DOMAIN = "/v2/getServerDomain"
+const val GET_UPLOAD_INFO = "/v2/getUploadInfo"
+const val NOTIFY_UPLOAD_SUCCESS = "/v2/notifyUploadSucc"
+const val GET_NEW_UPLOAD_INFO = "/v2/getNewUploadInfo"
+const val APP_ID = "appID"
+const val APP_ID_VALUE = "1018"
+const val SEPARATOR = "&"
+const val EQUAL_SEPARATOR = "="
+const val QUE_SEPARATOR = "?"
+
