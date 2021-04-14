@@ -1,0 +1,567 @@
+{
+    "code": "0",
+    "desc": "Success",
+    "commands": [
+        {
+            "head": {
+                "namespace": "Render",
+                "name": "DisplayTemplate"
+            },
+            "body": {
+                "templateType": "weather-weatherInfo",
+                "templateContent": {
+                    "ability": {
+                        "abilityId": "BUILTIN_WEATHER"
+                    },
+                    "extendInfo": {
+                        "intentName": "hw.weather.search",
+                        "startTime": "20210412000000000",
+                        "endTime": "20210412000000000"
+                    },
+                    "dataSource": [
+                        {
+                            "logoName": "bestWeather",
+                            "name": "最美天气",
+                            "language": "zh_CN",
+                            "abilityId": "0af7dd8c0216431b81c0ead2c3851628",
+                            "logoUrl": "https://hag-ability-test.obs.myhwclouds.com/icon/20200724160827786d23672c84498c916d1be6478095b5.png"
+                        }
+                    ],
+                    "items": [
+                        {
+                            "condition": {
+                                "comfortLink": {
+                                    "webURL": "https://h5.zuimeitianqi.com/page/zh/comfor.html?cityId=0101260120&lan=zh-cn&partner=04"
+                                },
+                                "windlevel": 0,
+                                "uVIndex": 1,
+                                "realfeel": 19,
+                                "winddir": "N",
+                                "pressure": 1016,
+                                "mobileLink": {
+                                    "deepLink": {},
+                                    "webURL": "https://h5.zuimeitianqi.com/page/zh/today.html?cityId=0101260120&lan=zh-cn&partner=04",
+                                    "quickApp": {}
+                                },
+                                "weatherid": 8,
+                                "temperature": 17,
+                                "cnweatherid": 2,
+                                "humidity": "100",
+                                "windspeed": 0,
+                                "updatetime": 1618192719000
+                            },
+                            "alert": [
+                                {
+                                    "publictime": 1618110000000,
+                                    "level": 1,
+                                    "typeName": "大风",
+                                    "levelName": "蓝色",
+                                    "id": "010126012031000041600000_20210411110209_1010212000505",
+                                    "title": "大风蓝色预警",
+                                    "type": 5,
+                                    "mobileLink": {
+                                        "webURL": "https://h5.zuimeitianqi.com/page/zh/warn.html?cityId=0101260120&lan=zh-cn&partner=04"
+                                    },
+                                    "content": "上海中心气象台2021年04月11日11时00分发布大风蓝色预警[Ⅳ级/一般]：受低压槽影响，预计未来24小时内本市沿江沿海地区和江河湖面将出现阵风7-8级的东南大风，请注意防范。（预警信息来源：国家预警信息发布中心）"
+                                }
+                            ],
+                            "city": {
+                                "citycode": "974168",
+                                "onlyHit": false,
+                                "provincename": "上海市",
+                                "timezone": "Asia/Shanghai",
+                                "name": "徐汇区",
+                                "englishCityName": "Xuhui District",
+                                "administrativearea": {
+                                    "englishName": "Shanghai",
+                                    "level": 1,
+                                    "localizedname": "上海市"
+                                },
+                                "adminCityCode": "106577",
+                                "supplementalAdminAreas": []
+                            },
+                            "dailys": {
+                                "windMobileLink": {
+                                    "deepLink": {},
+                                    "webURL": "https://h5.zuimeitianqi.com/page/zh/today.html?cityId=0101260120&lan=zh-cn&partner=04",
+                                    "quickApp": {}
+                                },
+                                "dailyweathers": [
+                                    {
+                                        "currentFestival": "",
+                                        "moonSet": 1618133640000,
+                                        "publictime": 1618070400000,
+                                        "maxtemp": 16,
+                                        "aqivaluetext": "优质",
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210411"
+                                        },
+                                        "conditionDay": {
+                                            "weatherid": 18,
+                                            "windlevel": 5,
+                                            "cnweatherid": 9,
+                                            "windspeed": 34,
+                                            "winddir": "SE"
+                                        },
+                                        "aqivalue": 28,
+                                        "moonphase": "WaningCrescent",
+                                        "sunSet": 1618136400000,
+                                        "moonRise": 1618089360000,
+                                        "conditionNight": {
+                                            "weatherid": 18,
+                                            "windlevel": 4,
+                                            "cnweatherid": 9,
+                                            "windspeed": 20,
+                                            "winddir": "SE"
+                                        },
+                                        "sunRise": 1618090260000,
+                                        "mintemp": 15
+                                    },
+                                    {
+                                        "currentFestival": "",
+                                        "moonSet": 1618223280000,
+                                        "publictime": 1618156800000,
+                                        "maxtemp": 19,
+                                        "aqivaluetext": "优质",
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210412"
+                                        },
+                                        "conditionDay": {
+                                            "weatherid": 18,
+                                            "windlevel": 4,
+                                            "cnweatherid": 7,
+                                            "windspeed": 28,
+                                            "winddir": "SE"
+                                        },
+                                        "aqivalue": 24,
+                                        "moonphase": "New",
+                                        "sunSet": 1618222800000,
+                                        "moonRise": 1618177440000,
+                                        "conditionNight": {
+                                            "weatherid": 38,
+                                            "windlevel": 3,
+                                            "cnweatherid": 2,
+                                            "windspeed": 17,
+                                            "winddir": "NW"
+                                        },
+                                        "sunRise": 1618176600000,
+                                        "mintemp": 14
+                                    },
+                                    {
+                                        "currentFestival": "",
+                                        "moonSet": 1618312980000,
+                                        "publictime": 1618243200000,
+                                        "maxtemp": 20,
+                                        "aqivaluetext": "优质",
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210413"
+                                        },
+                                        "conditionDay": {
+                                            "weatherid": 8,
+                                            "windlevel": 4,
+                                            "cnweatherid": 2,
+                                            "windspeed": 21,
+                                            "winddir": "N"
+                                        },
+                                        "aqivalue": 50,
+                                        "moonphase": "WaxingCrescent",
+                                        "sunSet": 1618309260000,
+                                        "moonRise": 1618265520000,
+                                        "conditionNight": {
+                                            "weatherid": 7,
+                                            "windlevel": 3,
+                                            "cnweatherid": 1,
+                                            "windspeed": 18,
+                                            "winddir": "N"
+                                        },
+                                        "sunRise": 1618262880000,
+                                        "mintemp": 11
+                                    },
+                                    {
+                                        "currentFestival": "",
+                                        "moonSet": 1618402680000,
+                                        "publictime": 1618329600000,
+                                        "maxtemp": 17,
+                                        "aqivaluetext": "优质",
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210414"
+                                        },
+                                        "conditionDay": {
+                                            "weatherid": 8,
+                                            "windlevel": 3,
+                                            "cnweatherid": 2,
+                                            "windspeed": 12,
+                                            "winddir": "NE"
+                                        },
+                                        "aqivalue": 25,
+                                        "moonphase": "WaxingCrescent",
+                                        "sunSet": 1618395720000,
+                                        "moonRise": 1618353720000,
+                                        "conditionNight": {
+                                            "weatherid": 38,
+                                            "windlevel": 3,
+                                            "cnweatherid": 2,
+                                            "windspeed": 18,
+                                            "winddir": "E"
+                                        },
+                                        "sunRise": 1618349220000,
+                                        "mintemp": 10
+                                    },
+                                    {
+                                        "currentFestival": "",
+                                        "moonSet": 1618492380000,
+                                        "publictime": 1618416000000,
+                                        "maxtemp": 18,
+                                        "aqivaluetext": "优质",
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210415"
+                                        },
+                                        "conditionDay": {
+                                            "weatherid": 8,
+                                            "windlevel": 3,
+                                            "cnweatherid": 2,
+                                            "windspeed": 19,
+                                            "winddir": "SE"
+                                        },
+                                        "aqivalue": 38,
+                                        "moonphase": "WaxingCrescent",
+                                        "sunSet": 1618482120000,
+                                        "moonRise": 1618442040000,
+                                        "conditionNight": {
+                                            "weatherid": 7,
+                                            "windlevel": 1,
+                                            "cnweatherid": 1,
+                                            "windspeed": 5,
+                                            "winddir": "S"
+                                        },
+                                        "sunRise": 1618435560000,
+                                        "mintemp": 12
+                                    },
+                                    {
+                                        "currentFestival": "",
+                                        "moonSet": 1618582140000,
+                                        "publictime": 1618502400000,
+                                        "maxtemp": 19,
+                                        "aqivaluetext": "良好",
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210416"
+                                        },
+                                        "conditionDay": {
+                                            "weatherid": 8,
+                                            "windlevel": 3,
+                                            "cnweatherid": 2,
+                                            "windspeed": 15,
+                                            "winddir": "NE"
+                                        },
+                                        "aqivalue": 72,
+                                        "moonphase": "WaxingCrescent",
+                                        "sunSet": 1618568580000,
+                                        "moonRise": 1618530600000,
+                                        "conditionNight": {
+                                            "weatherid": 7,
+                                            "windlevel": 1,
+                                            "cnweatherid": 1,
+                                            "windspeed": 3,
+                                            "winddir": "NE"
+                                        },
+                                        "sunRise": 1618521900000,
+                                        "mintemp": 13
+                                    },
+                                    {
+                                        "currentFestival": "",
+                                        "moonSet": 1618671840000,
+                                        "publictime": 1618588800000,
+                                        "maxtemp": 21,
+                                        "aqivaluetext": "良好",
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210417"
+                                        },
+                                        "conditionDay": {
+                                            "weatherid": 8,
+                                            "windlevel": 3,
+                                            "cnweatherid": 2,
+                                            "windspeed": 13,
+                                            "winddir": "SE"
+                                        },
+                                        "aqivalue": 77,
+                                        "moonphase": "WaxingCrescent",
+                                        "sunSet": 1618655040000,
+                                        "moonRise": 1618619400000,
+                                        "conditionNight": {
+                                            "weatherid": 7,
+                                            "windlevel": 1,
+                                            "cnweatherid": 1,
+                                            "windspeed": 4,
+                                            "winddir": "SE"
+                                        },
+                                        "sunRise": 1618608240000,
+                                        "mintemp": 13
+                                    },
+                                    {
+                                        "currentFestival": "",
+                                        "moonSet": 1618761420000,
+                                        "conditionDay": {
+                                            "weatherid": 8,
+                                            "windlevel": 3,
+                                            "cnweatherid": 2,
+                                            "windspeed": 15,
+                                            "winddir": "SE"
+                                        },
+                                        "moonphase": "WaxingCrescent",
+                                        "publictime": 1618675200000,
+                                        "maxtemp": 21,
+                                        "sunSet": 1618741440000,
+                                        "moonRise": 1618708560000,
+                                        "conditionNight": {
+                                            "weatherid": 38,
+                                            "windlevel": 1,
+                                            "cnweatherid": 2,
+                                            "windspeed": 1,
+                                            "winddir": "NE"
+                                        },
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210418"
+                                        },
+                                        "sunRise": 1618694580000,
+                                        "mintemp": 14
+                                    },
+                                    {
+                                        "currentFestival": "",
+                                        "moonSet": 0,
+                                        "conditionDay": {
+                                            "weatherid": 7,
+                                            "windlevel": 1,
+                                            "cnweatherid": 1,
+                                            "windspeed": 1,
+                                            "winddir": "SE"
+                                        },
+                                        "moonphase": "WaxingCrescent",
+                                        "publictime": 1618761600000,
+                                        "maxtemp": 19,
+                                        "sunSet": 1618827900000,
+                                        "moonRise": 1618798080000,
+                                        "conditionNight": {
+                                            "weatherid": 38,
+                                            "windlevel": 1,
+                                            "cnweatherid": 2,
+                                            "windspeed": 5,
+                                            "winddir": "S"
+                                        },
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210419"
+                                        },
+                                        "sunRise": 1618780920000,
+                                        "mintemp": 12
+                                    },
+                                    {
+                                        "currentFestival": "谷雨",
+                                        "moonSet": 1618850820000,
+                                        "conditionDay": {
+                                            "weatherid": 7,
+                                            "windlevel": 1,
+                                            "cnweatherid": 1,
+                                            "windspeed": 3,
+                                            "winddir": "S"
+                                        },
+                                        "moonphase": "First",
+                                        "publictime": 1618848000000,
+                                        "maxtemp": 22,
+                                        "sunSet": 1618914360000,
+                                        "moonRise": 1618887840000,
+                                        "conditionNight": {
+                                            "weatherid": 33,
+                                            "windlevel": 1,
+                                            "cnweatherid": 0,
+                                            "windspeed": 1,
+                                            "winddir": "N"
+                                        },
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210420"
+                                        },
+                                        "sunRise": 1618867260000,
+                                        "mintemp": 11
+                                    },
+                                    {
+                                        "currentFestival": "",
+                                        "moonSet": 1618939980000,
+                                        "conditionDay": {
+                                            "weatherid": 1,
+                                            "windlevel": 1,
+                                            "cnweatherid": 0,
+                                            "windspeed": 2,
+                                            "winddir": "NE"
+                                        },
+                                        "moonphase": "WaxingGibbous",
+                                        "publictime": 1618934400000,
+                                        "maxtemp": 21,
+                                        "sunSet": 1619000760000,
+                                        "moonRise": 1618977840000,
+                                        "conditionNight": {
+                                            "weatherid": 18,
+                                            "windlevel": 3,
+                                            "cnweatherid": 7,
+                                            "windspeed": 19,
+                                            "winddir": "E"
+                                        },
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210421"
+                                        },
+                                        "sunRise": 1618953540000,
+                                        "mintemp": 14
+                                    },
+                                    {
+                                        "currentFestival": "地球日",
+                                        "moonSet": 1619028900000,
+                                        "conditionDay": {
+                                            "weatherid": 18,
+                                            "windlevel": 3,
+                                            "cnweatherid": 7,
+                                            "windspeed": 15,
+                                            "winddir": "SE"
+                                        },
+                                        "moonphase": "WaxingGibbous",
+                                        "publictime": 1619020800000,
+                                        "maxtemp": 15,
+                                        "sunSet": 1619087220000,
+                                        "moonRise": 1619068020000,
+                                        "conditionNight": {
+                                            "weatherid": 18,
+                                            "windlevel": 1,
+                                            "cnweatherid": 7,
+                                            "windspeed": 4,
+                                            "winddir": "W"
+                                        },
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210422"
+                                        },
+                                        "sunRise": 1619039880000,
+                                        "mintemp": 14
+                                    },
+                                    {
+                                        "currentFestival": "读书日",
+                                        "moonSet": 1619117640000,
+                                        "conditionDay": {
+                                            "weatherid": 8,
+                                            "windlevel": 3,
+                                            "cnweatherid": 2,
+                                            "windspeed": 15,
+                                            "winddir": "W"
+                                        },
+                                        "moonphase": "WaxingGibbous",
+                                        "publictime": 1619107200000,
+                                        "maxtemp": 16,
+                                        "sunSet": 1619173680000,
+                                        "moonRise": 1619158320000,
+                                        "conditionNight": {
+                                            "weatherid": 18,
+                                            "windlevel": 3,
+                                            "cnweatherid": 7,
+                                            "windspeed": 13,
+                                            "winddir": "NW"
+                                        },
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210423"
+                                        },
+                                        "sunRise": 1619126220000,
+                                        "mintemp": 13
+                                    },
+                                    {
+                                        "currentFestival": "",
+                                        "moonSet": 1619206200000,
+                                        "conditionDay": {
+                                            "weatherid": 1,
+                                            "windlevel": 1,
+                                            "cnweatherid": 0,
+                                            "windspeed": 3,
+                                            "winddir": "NW"
+                                        },
+                                        "moonphase": "WaxingGibbous",
+                                        "publictime": 1619193600000,
+                                        "maxtemp": 15,
+                                        "sunSet": 1619260080000,
+                                        "moonRise": 1619248620000,
+                                        "conditionNight": {
+                                            "weatherid": 33,
+                                            "windlevel": 1,
+                                            "cnweatherid": 0,
+                                            "windspeed": 3,
+                                            "winddir": "SW"
+                                        },
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210424"
+                                        },
+                                        "sunRise": 1619212560000,
+                                        "mintemp": 11
+                                    },
+                                    {
+                                        "currentFestival": "",
+                                        "moonSet": 1619294640000,
+                                        "conditionDay": {
+                                            "weatherid": 1,
+                                            "windlevel": 1,
+                                            "cnweatherid": 0,
+                                            "windspeed": 5,
+                                            "winddir": "S"
+                                        },
+                                        "moonphase": "WaxingGibbous",
+                                        "publictime": 1619280000000,
+                                        "maxtemp": 24,
+                                        "sunSet": 1619346540000,
+                                        "moonRise": 1619339100000,
+                                        "conditionNight": {
+                                            "weatherid": 33,
+                                            "windlevel": 1,
+                                            "cnweatherid": 0,
+                                            "windspeed": 5,
+                                            "winddir": "SW"
+                                        },
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210425"
+                                        },
+                                        "sunRise": 1619298900000,
+                                        "mintemp": 15
+                                    },
+                                    {
+                                        "currentFestival": "知识产权日",
+                                        "moonSet": 1619383140000,
+                                        "conditionDay": {
+                                            "weatherid": 8,
+                                            "windlevel": 3,
+                                            "cnweatherid": 2,
+                                            "windspeed": 13,
+                                            "winddir": "NE"
+                                        },
+                                        "moonphase": "WaxingGibbous",
+                                        "publictime": 1619366400000,
+                                        "maxtemp": 21,
+                                        "sunSet": 1619433000000,
+                                        "moonRise": 1619429640000,
+                                        "conditionNight": {
+                                            "weatherid": 38,
+                                            "windlevel": 1,
+                                            "cnweatherid": 2,
+                                            "windspeed": 5,
+                                            "winddir": "NE"
+                                        },
+                                        "mobileLink": {
+                                            "webURL": "https://h5.zuimeitianqi.com/page/zh/daily.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210426"
+                                        },
+                                        "sunRise": 1619385240000,
+                                        "mintemp": 13
+                                    }
+                                ],
+                                "publictime": 1618192419507,
+                                "sunRiseSetMobileLink": {
+                                    "webURL": "https://h5.zuimeitianqi.com/page/zh/sun.html?cityId=0101260120&lan=zh-cn&partner=04&current=20210426"
+                                },
+                                "mobileLink": {
+                                    "webURL": "https://h5.zuimeitianqi.com/page/zh/days.html?cityId=0101260120&lan=zh-cn&partner=04"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
