@@ -341,3 +341,10 @@ console.log("decodeURIComponent(uri) :: " + decodeURIComponent(uri1));
 // eval
 var msg = "hello world";
 // eval("alert(msg);");
+
+let visitsCountMap = new WeakMap();
+
+function countUser(user) {
+    let count = visitsCountMap.get(user) || 0;
+    visitsCountMap.set(user, count + 1);
+}

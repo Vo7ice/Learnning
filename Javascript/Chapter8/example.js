@@ -91,3 +91,22 @@ function hasIEPlugin(name) {
 console.log("has ShockwaveFlash :: " + hasIEPlugin("ShockwaveFlash.ShockwaveFlash"));
 
 console.log("has QuickTIme :: " +hasIEPlugin("QuickTIme.QuickTime"));
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+//   }
+
+let ask = (question, yes, no) => {
+    if (confirm(question)) {
+        yes();
+    } else {
+        no();
+    }
+}
+  
+  ask(
+    "Do you agree?",
+    function() { alert("You agreed."); },
+    function() { alert("You canceled the execution."); }
+  );
