@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue入门</title>
+<script src="vue.js" charset="utf-8" type="text/JavaScript"></script>
+</head>
+<body>
+    <!-- 挂载点, 模板, 实例之间的关系-->
+    <div id="root">
+        <h1>Hello {{message}}</h1>
+        <h2 v-text="content"></h2>
+        <h2 v-html="content"></h2>
+        <div @click="handleClick">{{context}}</div>
+    </div>
+    <script>
+        var vue = new Vue({
+            el: "#root",
+            data: {
+                message: 'Vue!',
+                number: 123,
+                content: "<h1>hello</h1>",
+                context:"hello"
+            },
+            methods: {
+                handleClick: function() {
+                    this.context = "world";
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>
