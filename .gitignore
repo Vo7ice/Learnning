@@ -52,3 +52,5 @@ Mkfile.old
 dkms.conf
 .Rtos/
 .vscode/
+webpack/node_modules/
+webpack/package-lock.json
