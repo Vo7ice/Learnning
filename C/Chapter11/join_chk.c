@@ -11,13 +11,13 @@ int main(void)
     char addon[] = "s smell like old shoes.";
     char bug[BUGSIZE];
     int available;
-    /*puts("What is your favorite flower?");
-    s_gets("flower", SIZE);
+    puts("What is your favorite flower?");
+    s_gets(flower, SIZE);
     if ((strlen(addon) + strlen(flower) + 1) <= SIZE)
     {
         strcat(flower, addon);
     }
-    puts(flower);*/
+    puts(flower);
     puts("What is your favorite bug?");
     s_gets(bug, BUGSIZE);
     printf("length:%d\n", strlen(bug));
@@ -49,8 +49,6 @@ char* s_gets(char *st, int n)
                 continue;
             }
         }
-        
-        return ret_val;
     }
-    
+    return ret_val;
 }

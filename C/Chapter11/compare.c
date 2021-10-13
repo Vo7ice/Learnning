@@ -1,9 +1,11 @@
-/* nogo.c 该程序是否能正常运行？ */
+/* compare.c */
 #include <stdio.h>
+#include <string.h>
+
 #define ANSWER "Grant"
 #define SIZE 40
-char* s_gets(char *st, int n);
 
+char *s_gets(char *st, int n);
 
 int main(void)
 {
@@ -11,16 +13,17 @@ int main(void)
     puts("Who is buried in Grant`s tomb?");
 
     s_gets(try, SIZE);
-    while (try != ANSWER)
+    while (strcmp(try, ANSWER) != 0)
     {
         puts("No, that`s wrong. Try again.");
         s_gets(try, SIZE);
     }
 
     puts("That`s right!");
-    
+
     return 0;
 }
+
 
 char *s_gets(char *st, int n)
 {

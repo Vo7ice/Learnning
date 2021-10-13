@@ -1,24 +1,23 @@
-/* nogo.c 该程序是否能正常运行？ */
+/*format.c 格式化字符串 */
 #include <stdio.h>
-#define ANSWER "Grant"
-#define SIZE 40
-char* s_gets(char *st, int n);
+#define MAX 20
 
+char *s_gets(char *st, int n);
 
 int main(void)
 {
-    char try[SIZE];
-    puts("Who is buried in Grant`s tomb?");
-
-    s_gets(try, SIZE);
-    while (try != ANSWER)
-    {
-        puts("No, that`s wrong. Try again.");
-        s_gets(try, SIZE);
-    }
-
-    puts("That`s right!");
-    
+    char first[MAX];
+    char last[MAX];
+    char formal[2 * MAX + 10];
+    double prize;
+    puts("Enter your first name:");
+    s_gets(first, MAX);
+    puts("Enter your last name:");
+    s_gets(last, MAX);
+    puts("Enter your prize money");
+    scanf("%lf", &prize);
+    sprintf(formal, "%s, %-19s: $%6.2f\n", last, first, prize);
+    puts(formal);
     return 0;
 }
 
