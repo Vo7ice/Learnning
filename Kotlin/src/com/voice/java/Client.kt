@@ -54,7 +54,7 @@ fun doPostInKtWeather(url: String, body: String, charset: Charset = Charsets.UTF
     connection.setRequestProperty("Content-Type", "application/json")
     connection.setRequestProperty("x-client-version", "com.huawei.app_10.0.1")
     connection.setRequestProperty("x-hag-trace-id", "AABBCCDDEEFFGG112233445566778899-000001")
-    connection.setRequestProperty("x-prd-pkg-name", "com.huawei.android.totemweather")
+    connection.setRequestProperty("x-prd-pkg-name", "com.huawei.kidwatchFeature.weather")
     connection.setRequestProperty("x-access-key", "10001")
     val os = connection.outputStream
     os.write(body.toByteArray(charset))
@@ -95,5 +95,82 @@ fun doGetInKt(url: String, charset: Charset = Charsets.UTF_8): String {
         br.readLines().forEach { sb.append(it) }
         br.close()
     }
+    return sb.toString()
+}
+
+fun doPostInWxWork(url: String, charset: Charset = Charsets.UTF_8, body: String): String {
+    val sb = StringBuilder()
+    val connection = URL(url).openConnection() as HttpURLConnection
+    connection.apply {
+        requestMethod = "POST"
+        connectTimeout = 15000
+        readTimeout = 60000
+        doOutput = true
+        doInput = true
+    }
+    connection.setRequestProperty("Content-Type", "application/json")
+    val os = connection.outputStream
+    os.write(body.toByteArray(charset))
+    val resCode = connection.responseCode
+    println("code -> $resCode")
+    if (resCode == HttpURLConnection.HTTP_OK) {
+
+    }
+    return "OKAY"
+}
+
+fun doPostInGrs(url: String, body: String, charset: Charset = Charsets.UTF_8): String {
+    val connection = URL(url).openConnection() as HttpURLConnection
+    connection.apply {
+        requestMethod = "POST"
+        connectTimeout = 15000
+        readTimeout = 60000
+        doOutput = true
+        doInput = true
+    }
+    connection.setRequestProperty("Content-Type", "application/json")
+    connection.setRequestProperty(
+        "User-Agent",
+        "com.huawei.grswin/1.0(Window 64 bit;10;10SMS02400)GRSSDK_C/1.0.0.1/test/test no_service_name"
+    )
+//    val os = connection.outputStream
+//    os.write(body.toByteArray(charset))
+    val resCode = connection.responseCode
+    println("code -> $resCode")
+    if (resCode == HttpURLConnection.HTTP_OK) {
+
+    }
+    return "OKAY"
+}
+
+fun getPoemToken(url: String, charset: Charset = Charsets.UTF_8): String =
+    getPoemResponse(url, null, charset)
+
+fun getOnePoemWithoutToken(url: String, charset: Charset = Charsets.UTF_8): String =
+    getPoemResponse(url, null, charset)
+
+fun getPoemResponse(url: String, token: String?, charset: Charset = Charsets.UTF_8): String {
+    val sb = StringBuilder()
+    val connection = URL(url).openConnection() as HttpURLConnection
+    connection.apply {
+        requestMethod = "GET"
+        connectTimeout = 15000
+        readTimeout = 60000
+        doOutput = true
+        doInput = true
+    }
+    connection.setRequestProperty("Content-Type", "application/json")
+    if (token?.isNotEmpty() == true) {
+        connection.setRequestProperty("X-User-Token", token)
+    }
+    val resCode = connection.responseCode
+    println("code -> $resCode")
+    if (resCode == HttpURLConnection.HTTP_OK) {
+        println("http is ok")
+        val br = BufferedReader(InputStreamReader(connection.inputStream, charset))
+        br.readLines().forEach { sb.append(it) }
+        br.close()
+    }
+    println("http response: $sb")
     return sb.toString()
 }
